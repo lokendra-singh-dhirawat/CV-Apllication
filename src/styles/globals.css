@@ -2,77 +2,114 @@
 @tailwind components;
 @tailwind utilities;
  
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: ;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --ring: 215 20.2% 65.1%;
- 
-    --radius: 0.5rem;
-  }
- 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: ;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
- 
-    --ring: 217.2 32.6% 17.5%;
-  }
+
+input{
+  outline: invert(0%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(103%) contrast(103%);
 }
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+
+h2{
+  font-size: 1.5rem;
+  font-weight: 600; 
+  line-height: 2rem;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: black;
+  height: 5rem;
+  width: 100%;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+body{
+  background-color: #d1d5db;
+}
+
+.persional_details,
+.proffessional_details,
+.refrence,
+.work{
+  display: grid;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 3rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  margin-right:7rem ;
+  margin-left: 7rem;
+  margin-top: 2rem;
+  background-color: black;
+  color: #fff;
+  box-shadow: 15px 15px 10px 0 rgba(0, 0, 0, 0.943);
+}
+
+.persional_details{
+  margin-top: 6rem;
+}
+
+.set1,
+.set2,
+.set3,
+.set4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5rem;
+  margin-top: 1rem;
+}
+
+input{
+  border: none;
+  outline: none;
+  padding-left: 0.5rem;
+  width: 52.05%;
+  color: black;
+  height: fit-content;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+#date{
+  background-color: #fff;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 600px;
+}
+
+#calender_popup{
+  background-color: black;
+  color: #fff;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
