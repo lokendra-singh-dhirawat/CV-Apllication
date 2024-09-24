@@ -9,16 +9,21 @@ input{
 
 h2{
   font-size: 1.5rem;
-  font-weight: 600; 
+  font-weight: 500; 
   line-height: 2rem;
   color: #fff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1{
   font-size: 2.5rem;
-  font-weight: 200;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 .header{
@@ -45,7 +50,7 @@ body{
   background-color: #d1d5db;
 }
 
-.persional_details,
+.personal_details,
 .proffessional_details,
 .refrence,
 .work{
@@ -64,7 +69,7 @@ body{
   box-shadow: 15px 15px 10px 0 rgba(0, 0, 0, 0.943);
 }
 
-.persional_details{
+.personal_details{
   margin-top: 6rem;
 }
 
@@ -112,4 +117,84 @@ input{
   margin-bottom: 2rem;
 }
 
+.resume_output{
+ background-color: #fff;
+ display: flex;
+ height: auto;
+ width:63%;
+ margin-bottom: 3rem;
+}
 
+.resume_whole{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_section{
+  width: 40%;
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+  text-align: left;
+  height:90vh;
+}
+
+.right_section{
+  width: 60%;
+  background-color:#fff;
+  color: #000;
+  display: flex;
+  padding-left: 35px;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.top-right_part{
+  padding-top: 5px;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.Bold{
+  font-weight: bolder;
+  
+}
+
+.about{
+  margin-right: 10px;
+  border-bottom: #000 solid 1px;
+  padding-bottom: 15px;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bottom_part1,
+.bottom_part2,
+.bottom_part3,
+.bottom_part4,
+.bottom_part5{
+ margin-bottom: 5px;
+}
+
+.Resume_reference{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Exp1,
+.Exp2{
+  padding-top: 10px;
+}
+
+.Exp3{
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.Left_image{
+  display: flex;
+  justify-content: center;
+  
+}
